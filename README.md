@@ -2,7 +2,7 @@
 
 A dark && flat && blue, QtCurve based theme for KDE featuring some GTK icon fixes, a custom white on black Sifr icon style for LibreOffice and some Firefox and KMail UI customizations.
 
-![ColdHex Plasma screenshot](https://github.com/denydias/drp/blob/master/screenshots/1-plasma.png)
+![ColdHex Plasma screenshot](https://raw.githubusercontent.com/denydias/coldhex/master/screenshots/1-plasma.png)
 
 ColdHex is heavily based on the following amazing third parties work:
 
@@ -12,7 +12,7 @@ ColdHex is heavily based on the following amazing third parties work:
 
 This is how it looks with native Qt/KDE apps (Dolphin and Gwenview):
 
-![ColdHex KDE applications screenshot](https://github.com/denydias/drp/blob/master/screenshots/2-plasma_apps.png)
+![ColdHex KDE applications screenshot](https://raw.githubusercontent.com/denydias/coldhex/master/screenshots/2-plasma_apps.png)
 
 ## Installation
 
@@ -77,7 +77,7 @@ FIREFOX_DST=/usr/share/icons/hicolor
 
 ColdHex also provides an easy to apply workaround for LibreOffice white on black behavior. This is how it looks:
 
-![ColdHex LibreOffice screenshot](https://github.com/denydias/drp/blob/master/screenshots/3-gtk_libreoffice.png)
+![ColdHex LibreOffice screenshot](https://raw.githubusercontent.com/denydias/coldhex/master/screenshots/3-gtk_libreoffice.png)
 
 To apply it, run this the following in your terminal:
 
@@ -92,7 +92,7 @@ Then follow onscreen rules.
 
 You could get nice gray URLs in your Firefox's Location Bar dropdown.
 
-![ColdHex Firefox screenshot](https://github.com/denydias/drp/blob/master/screenshots/4-gtk_firefox.png)
+![ColdHex Firefox screenshot](https://raw.githubusercontent.com/denydias/coldhex/master/screenshots/4-gtk_firefox.png)
 
 Just edit (or create) your `.mozilla/firefox/anything.default/chrome/userChrome.css` to add:
 
