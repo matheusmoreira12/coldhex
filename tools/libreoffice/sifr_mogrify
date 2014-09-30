@@ -1,0 +1,40 @@
+#!/bin/sh
+#title           :sifr_mogrify
+#description     :Modify default LibreOffice Sifr style to fit a dark theme
+#author          :Deny Dias [http://mexapi.maxpress.com.br/]
+#date            :2014.09.28
+#version         :0.1
+#usage           :sifr_mogrify
+#license         :GPLv3 [http://www.gnu.org/licenses/gpl-3.0.txt]
+#===============================================================================
+
+# Set original Sifr path
+SIFRPATH=/usr/lib64/libreoffice/share/config
+
+# The main script
+if [ ! -f images_sifr_original.zip ]; then
+  cp $SIFRPATH/images_sifr.zip images_sifr_original.zip
+fi
+unzip images_sifr_original.zip -d images_sifr
+cd images_sifr
+find . -name '*.png' -exec mogrify -verbose -fuzz 75% -fill 'rgb(222,222,222)' -opaque 'rgb(66,66,66)' {} \;
+zip -rqv ../images_sifr_mogrify.zip *
+cd ..
+cat <<'EOF'
+
+Sifr mogrify has been complete.
+To install the new theme, run:
+
+$ sudo cp images_sifr_mogrify.zip /usr/lib64/libreoffice/share/config/images_sifr.zip
+
+Then open LibreOffice and set the Sifr style.
+
+As you might doing this as you are going to run a dark KDE theme, you may want
+to add the following to your ~/.xprofile (or equivalent):
+
+----8<----
+# Fix for LibreOffice dark themes in KDE
+export env OOO_FORCE_DESKTOP=kde
+----8<----
+
+EOF

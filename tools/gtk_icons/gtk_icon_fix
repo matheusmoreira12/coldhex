@@ -1,0 +1,83 @@
+#!/bin/sh
+#title           :gtk_icon_fix
+#description     :Fix GTK icons for QtCurve themes
+#author          :Deny Dias [http://mexapi.maxpress.com.br/]
+#date            :2014.09.28
+#version         :0.1
+#usage           :gtk_icon_fix
+#license         :GPLv3 [http://www.gnu.org/licenses/gpl-3.0.txt]
+#===============================================================================
+
+# Set runtime paths
+RUNPATH=$( dirname "$0" )
+RUNPATH=$( cd "$RUNPATH" && pwd )
+SRC=$RUNPATH/icons
+DROPBOX_DST=$HOME/.dropbox-dist/dropbox-lnx.x86_64-2.10.30/images/hicolor/16x16
+FIREFOX_DST=/usr/share/icons/hicolor
+
+# Update icon cache
+function updiconcache {
+  if find /usr/share/icons 2> /dev/null | grep -q icon-theme.cache ; then
+    for theme_dir in /usr/share/icons/* ; do
+      if [ -r ${theme_dir}/icon-theme.cache ]; then
+        echo "Updating icon-theme.cache in ${theme_dir}..." | $LOGCMD
+        /usr/bin/gtk-update-icon-cache -t -f ${theme_dir} 1> /dev/null 2> /dev/null &
+      fi
+    done
+    if [ -r /usr/share/icons/icon-theme.cache ]; then
+      echo "Deleting icon-theme.cache in /usr/share/icons..." | $LOGCMD
+      rm -f /usr/share/icons/icon-theme.cache
+    fi
+  fi
+}
+export -f updiconcache
+
+# Fix Dropbox icons
+if [ ! -d $DROPBOX_DST//status-orig ]; then
+  cp -fr $DROPBOX_DST/status $DROPBOX_SRC/icons/status-orig
+fi
+cp -fv $SRC/dropboxstatus-busy.png $DROPBOX_DST/status/dropboxstatus-busy.png
+cp -fv $SRC/dropboxstatus-busy2.png $DROPBOX_DST/status/dropboxstatus-busy2.png
+cp -fv $SRC/dropboxstatus-idle.png $DROPBOX_DST/status/dropboxstatus-idle.png
+cp -fv $SRC/dropboxstatus-logo.png $DROPBOX_DST/status/dropboxstatus-logo.png
+cp -fv $SRC/dropboxstatus-x.png $DROPBOX_DST/status/dropboxstatus-x.png
+mogrify -resize 16x16 $DROPBOX_DST/status/dropboxstatus-busy.png
+mogrify -resize 16x16 $DROPBOX_DST/status/dropboxstatus-busy2.png
+mogrify -resize 16x16 $DROPBOX_DST/status/dropboxstatus-idle.png
+mogrify -resize 16x16 $DROPBOX_DST/status/dropboxstatus-logo.png
+mogrify -resize 16x16 $DROPBOX_DST/status/dropboxstatus-x.png
+
+# Fix Firefox icons
+if [ ! -f $FIREFOX_DST/256x256/apps/firefox-orig.png ]; then
+  sudo cp $FIREFOX_DST/256x256/apps/firefox.png $FIREFOX_DST/256x256/apps/firefox-orig.png
+fi
+if [ ! -f $FIREFOX_DST/48x48/apps/firefox-orig.png ]; then
+  sudo cp $FIREFOX_DST/48x48/apps/firefox.png $FIREFOX_DST/48x48/apps/firefox-orig.png
+fi
+if [ ! -f $FIREFOX_DST/32x32/apps/firefox-orig.png ]; then
+  sudo cp $FIREFOX_DST/32x32/apps/firefox.png $FIREFOX_DST/32x32/apps/firefox-orig.png
+fi
+if [ ! -f $FIREFOX_DST/24x24/apps/firefox-orig.png ]; then
+  sudo cp $FIREFOX_DST/24x24/apps/firefox.png $FIREFOX_DST/24x24/apps/firefox-orig.png
+fi
+if [ ! -f $FIREFOX_DST/22x22/apps/firefox-orig.png ]; then
+  sudo cp $FIREFOX_DST/22x22/apps/firefox.png $FIREFOX_DST/22x22/apps/firefox-orig.png
+fi
+if [ ! -f $FIREFOX_DST/16x16/apps/firefox-orig.png ]; then
+  sudo cp $FIREFOX_DST/16x16/apps/firefox.png $FIREFOX_DST/16x16/apps/firefox-orig.png
+fi
+sudo cp -fv $SRC/firefox.png $FIREFOX_DST/256x256/apps/firefox.png
+sudo cp -fv $SRC/firefox.png $FIREFOX_DST/48x48/apps/firefox.png
+sudo cp -fv $SRC/firefox.png $FIREFOX_DST/32x32/apps/firefox.png
+sudo cp -fv $SRC/firefox.png $FIREFOX_DST/24x24/apps/firefox.png
+sudo cp -fv $SRC/firefox.png $FIREFOX_DST/22x22/apps/firefox.png
+sudo cp -fv $SRC/firefox.png $FIREFOX_DST/16x16/apps/firefox.png
+sudo mogrify -resize 256x256 $FIREFOX_DST/256x256/apps/firefox.png
+sudo mogrify -resize 48x48 $FIREFOX_DST/48x48/apps/firefox.png
+sudo mogrify -resize 32x32 $FIREFOX_DST/32x32/apps/firefox.png
+sudo mogrify -resize 24x24 $FIREFOX_DST/24x24/apps/firefox.png
+sudo mogrify -resize 22x22 $FIREFOX_DST/22x22/apps/firefox.png
+sudo mogrify -resize 16x16 $FIREFOX_DST/16x16/apps/firefox.png
+
+# Update icon cache
+su -c "updiconcache"

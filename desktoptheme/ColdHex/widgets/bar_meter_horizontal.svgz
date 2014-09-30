@@ -1,0 +1,80 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Karbon, part of Calligra: http://www.calligra.org/karbon -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105.6pt" height="34.4pt">
+<defs/>
+<g id="layer1">
+  <rect id="label0" transform="translate(5, 0)" fill="#0000ff" fill-opacity="0.50196078431" fill-rule="evenodd" width="48.00000000000pt" height="9.60000000000pt"/>
+  <rect id="label1" transform="translate(67, 0)" fill="#0000ff" fill-opacity="0.50196078431" fill-rule="evenodd" width="46.40000000000pt" height="9.60000000000pt"/>
+  <rect id="label2" transform="translate(35, 0)" fill="#0000ff" fill-opacity="0.50196078431" fill-rule="evenodd" width="52.00000000000pt" height="9.60000000000pt"/>
+  <rect id="hint-stretch-borders" transform="translate(60, 38.0536)" fill="#008000" width="4.00000000000pt" height="4.00000000000pt"/>
+  <rect id="background" transform="translate(0, 17)" fill="#4d4d4d" fill-opacity="0.03846799420" opacity="0.01000001000" width="105.60000000000pt" height="11.20000000000pt"/>
+  <rect id="hint-bar-stretch" transform="translate(70.0536, 38.0536)" fill="#008000" width="4.00000000000pt" height="4.00000000000pt"/>
+  <rect id="bar-active-center" transform="translate(40, 53)" fill="#275ea0" width="16.00000160000pt" height="1.60000000000pt"/>
+  <g id="bar-active-top" transform="translate(39.375, 46.375)" fill="none">
+   <rect id="rect7543" transform="translate(0.625, 0.625)" fill="#275ea0" opacity="0.00000000000" width="16.00000000000pt" height="4.80000000000pt"/>
+   <rect id="rect7545" transform="translate(0.625, 2.625)" fill="#275ea0" width="16.00000000000pt" height="3.20000000000pt"/>
+  </g>
+  <g id="bar-active-bottom" transform="translate(39.375, 54.375)" fill="none">
+   <rect id="rect7543-1" transform="matrix(-1 0 0 -1 20.625 6.625)" fill="#275ea0" opacity="0.00000000000" width="16.00000000000pt" height="4.80000000000pt"/>
+   <rect id="rect7545-5" transform="matrix(-1 0 0 -1 20.625 4.625)" fill="#275ea0" width="16.00000000000pt" height="3.20000000000pt"/>
+  </g>
+  <g id="bar-active-right" transform="translate(59.375, 52.375)" fill="none">
+   <rect id="rect7613" transform="translate(0.625, 0.625)" fill="#275ea0" opacity="0.00000000000" width="4.00000000000pt" height="1.60000000000pt"/>
+   <rect id="rect7615" transform="translate(0.625, 0.625)" fill="#275ea0" width="3.20000000000pt" height="1.60000000000pt"/>
+  </g>
+  <g id="bar-active-left" transform="translate(34.356, 52.3649)" fill="none">
+   <rect id="rect7613-4" transform="matrix(-1 0 0 -1 5.625 2.625)" fill="#275ea0" opacity="0.00000000000" width="4.00000000000pt" height="1.60000000000pt"/>
+   <rect id="rect7615-7" transform="matrix(-1 0 0 -1 5.625 2.625)" fill="#275ea0" width="3.17856808000pt" height="1.58570912000pt"/>
+  </g>
+  <g id="bar-active-topleft" transform="translate(34.375, 46.375)" fill="none">
+   <rect id="rect7645" transform="translate(0.625, 0.625)" fill="#275ea0" opacity="0.00000000000" width="4.00000000000pt" height="4.80000000000pt"/>
+   <path id="rect7647" transform="translate(1.625, 2.625)" fill="#275ea0" d="M0 0L0 2L0 3L0 4L4 4L4 2L4 0Z"/>
+  </g>
+  <g id="bar-active-bottomleft" transform="translate(34.3783, 54.375)" fill="none">
+   <rect id="rect7645-5" transform="matrix(1 0 0 -1 0.625 6.63505)" fill="#275ea0" opacity="0.00000000000" width="4.00000000000pt" height="4.80000000000pt"/>
+   <path id="rect7647-6" transform="translate(1.5904, 0.625)" fill="#275ea0" d="M0 0C0 0.083333 0.024448 0.16681 0.03125 0.25L0.03125 2L0.03125 3L0.03125 4L4.03125 4L4.03125 3L4.03125 2L4.03125 0L0.03125 0Z"/>
+  </g>
+  <g id="bar-active-topright" transform="translate(59.375, 46.3929)" fill="none">
+   <rect id="rect7645-3" transform="matrix(-1 0 0 1 5.64286 0.625)" fill="#275ea0" opacity="0.00000000000" width="4.00000000000pt" height="4.80000000000pt"/>
+   <path id="rect7647-7" transform="translate(0.625, 2.60714)" fill="#275ea0" d="M0 0L0 3L0 4L0.03125 4L0.03125 4.03125L4 4L4 3L4 0Z"/>
+  </g>
+  <g id="bar-active-bottomright" transform="translate(59.375, 54.3393)" fill="none">
+   <rect id="rect7645-3-5" transform="matrix(-1 0 0 -1 5.65179 6.625)" fill="#275ea0" opacity="0.00000000000" width="4.00000000000pt" height="4.80000000000pt"/>
+   <path id="rect7647-7-2" transform="translate(0.625, 0.660712)" fill="#275ea0" d="M0 0L0 1L0 4L4 4L4 1L4 0Z"/>
+  </g>
+  <g id="background-top" transform="translate(39.375, 66.375)" fill="none">
+   <rect id="rect7543-7" transform="translate(0.680459, 0.625)" fill="#000000" opacity="0.00000000000" width="16.00000000000pt" height="4.80000000000pt"/>
+   <rect id="rect7545-6" transform="translate(0.625, 1.625)" fill="#ffffff" opacity="0.07000002000" width="16.00000000000pt" height="4.00000000000pt"/>
+  </g>
+  <rect id="background-center" transform="translate(39.9775, 72.9892)" fill="#ffffff" opacity="0.07000000000" width="16.00000160000pt" height="1.60000000000pt"/>
+  <g id="background-topleft" transform="translate(34.3195, 66.4131)" fill="none">
+   <rect id="rect7645-4" transform="translate(0.625, 0.625)" fill="#000000" opacity="0.00000000000" width="4.00000000000pt" height="4.80000000000pt"/>
+   <path id="rect7647-4" transform="translate(0.680456, 1.58686)" fill="#ffffff" opacity="0.07000000000" d="M0 0L0 3L0 4L0 5L5 5L5 3L5 0Z"/>
+  </g>
+  <g id="background-topright" transform="translate(59.375, 66.391)" fill="none">
+   <rect id="rect7645-4-0" transform="matrix(-1 0 0 1 5.67266 0.625)" fill="#000000" opacity="0.00000000000" width="4.00000000000pt" height="4.80000000000pt"/>
+   <path id="rect7647-4-7" transform="matrix(-1 0 0 1 5.625 1.60896)" fill="#ffffff" opacity="0.07000002000" d="M5 0L5 0.03106L5 3.01242L5 4.00621L5 4.96894L5 5L0 5L0 4.96894L0 4.00621L0 3.01242L0 0.03106L4.65625 0.03106C4.77426 0.02466 4.87865 0 5 0Z"/>
+  </g>
+  <g id="background-left" transform="translate(34.3482, 72.3571)" fill="none">
+   <rect id="rect7613-4-1" transform="matrix(-1 0 0 -1 5.625 2.625)" fill="#000000" opacity="0.00000000000" width="4.00000000000pt" height="1.60000000000pt"/>
+   <rect id="rect7615-7-4" transform="matrix(-1 0 0 -1 5.625 2.64286)" fill="#ffffff" opacity="0.07000002000" width="3.97856792000pt" height="1.60000000000pt"/>
+  </g>
+  <g id="background-right" transform="translate(59.3665, 72.3773)" fill="none">
+   <rect id="rect7613-4-1-2" transform="matrix(-1 0 0 -1 5.625 2.625)" fill="#000000" opacity="0.00000000000" width="4.00000000000pt" height="1.60000000000pt"/>
+   <rect id="rect7615-7-4-0" transform="matrix(-1 0 0 -1 5.625 2.625)" fill="#ffffff" opacity="0.07000000000" width="3.97856792000pt" height="1.58570912000pt"/>
+  </g>
+  <g id="background-bottom" transform="translate(39.3087, 74.375)" fill="none">
+   <rect id="rect7543-7-8" transform="matrix(-1 0 0 -1 20.625 6.63595)" fill="#000000" opacity="0.00000000000" width="16.00000000000pt" height="4.80000000000pt"/>
+   <rect id="rect7545-6-9" transform="matrix(-1 0 0 -1 20.6913 5.625)" fill="#ffffff" opacity="0.07000002000" width="16.00000000000pt" height="3.99999848000pt"/>
+  </g>
+  <g id="background-bottomright" transform="translate(59.3545, 74.375)" fill="none">
+   <rect id="rect7645-4-0-6" transform="matrix(0 -1 -1 0 5.63063 6.64294)" fill="#000000" opacity="0.00000000000" width="4.75180128000pt" height="4.00450480000pt"/>
+   <path id="rect7647-4-7-6" transform="matrix(0 -1 -1 0 5.64547 5.625)" fill="#ffffff" opacity="0.07000002000" d="M5 5L3 5L0 5L0 0L3 0L5 0Z"/>
+  </g>
+  <g id="background-bottomleft" transform="translate(34.3637, 74.375)" fill="none">
+   <rect id="rect7645-4-9" transform="matrix(0 -1 1 0 0.625 6.62269)" fill="#000000" opacity="0.00000000000" width="4.78676872000pt" height="3.98682712000pt"/>
+   <path id="rect7647-4-5" transform="matrix(0 -1 1 0 0.636264 5.62495)" fill="#ffffff" opacity="0.07000002000" d="M5 4.9375L4.93827 0L2.96296 0L0 0L0 5L2.96296 5L4.93827 5L4.93827 4.9375Z"/>
+  </g>
+ </g>
+</svg>
