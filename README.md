@@ -31,8 +31,8 @@ Follow the steps bellow to install ColdHex. The installation procedure is based 
 3. Symlink (or copy) the following directories:
 
     ```ShellSession
-    ln -s /path/to/coldhex/desktoptheme/ColdHex /home/jdoe/.kde/share/apps/desktoptheme/
-    ln -s /path/to/coldhex/color-schemes/ColdHex.colors /home/jdoe/.kde/share/apps/color-schemes/
+    $ ln -s /path/to/coldhex/desktoptheme/ColdHex /home/jdoe/.kde/share/apps/desktoptheme/
+    $ ln -s /path/to/coldhex/color-schemes/ColdHex.colors /home/jdoe/.kde/share/apps/color-schemes/
     ```
 
 4. Open System Settings > Appearance > Style, choose 'QtCurve' in 'Widget style';
@@ -58,8 +58,8 @@ Things will look a bit weird now. That's because you need to logout/login back (
 When you select QtCurve for GTK2 Theme, KDE GTK+ integration is going to refuse to show your selected icon theme for GTK+ application on your taskbar and system tray. This is particularly annoying for continuously open applications such as Firefox and Dropbox. To fix that open a terminal and run:
 
 ```ShellSession
-cd /path/to/coldhex/tools/gtk_icons/
-./gtk_icon_fix
+$ cd /path/to/coldhex/tools/gtk_icons/
+$ ./gtk_icon_fix
 ```
 
 At the end it'll ask for your root password to clean up icon caches. You are free to just not give it and hit 'CTRL-C' if your Linux distro just run that at boot. You have to figure out if that's your case for yourself.
@@ -82,27 +82,28 @@ ColdHex also provides an easy to apply workaround for LibreOffice white on black
 To apply it, run the following in your terminal:
 
 ```ShellSession
-cd /path/to/coldhex/tools/libreoffice/
-./sifr_mogrify
+$ cd /path/to/coldhex/tools/libreoffice/
+$ ./sifr_mogrify
 ```
 
 Then follow onscreen rules.
 
 ### Firefox
 
-You could get nice gray URLs in your Firefox's Location Bar dropdown.
+ColdHex includes some tweaks for Firefox UI and content. These will give you a better look to Location Bar dropdown URLs and badly designed forms on web pages (e.g. unreadable text).
 
 ![ColdHex Firefox screenshot](https://raw.githubusercontent.com/denydias/coldhex/master/screenshots/4-gtk_firefox.png)
 
-Just edit (or create) `$HOME/.mozilla/firefox/anything.default/chrome/userChrome.css` to add:
+To apply it, run the following in your terminal (remember to replace `[anything]` with your actual profile directory):
 
-```CSS
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-
-.ac-url-text {color:#787775 !important;}
+```ShellSession
+$ mkdir $HOME/.mozilla/firefox/[anything].default/chrome/
+$ ln -s /path/to/coldhex/tools/firefox/userChrome.css /home/jdoe/.mozilla/firefox/[anything].default/chrome/
+$ ln -s /path/to/coldhex/tools/firefox/userContent.css /home/jdoe/.mozilla/firefox/[anything].default/chrome/
 ```
 
-Pay attention that the above is tested only in Firefox 32+. If you are in Slackware, make sure you have **NOT** compiled `QtCurve-Gtk2` package with the option `USERCHROME=no` in place.
+**WARNING:**
+This theme is tested only in Firefox 32+. If you are in Slackware, make sure you have **NOT** compiled `QtCurve-Gtk2` package with the option `USERCHROME=no` in place.
 
 ### KMail
 

@@ -1,0 +1,58 @@
+/*
+ * This file can be used to apply a style to all web pages you view
+ * Rules without !important are overruled by author rules if the
+ * author sets any.  Rules with !important overrule author rules.
+ */
+
+/* Styles for anything but about:* */
+@-moz-document regexp('(?!about:).*') {
+  body {
+    background-color: white;
+    color: #1f1f1f;
+    -moz-appearance: none !important;
+  }
+
+  input {
+    border: 1px solid #787775;
+    background-color: white;
+    color: #1f1f1f;
+    -moz-appearance: none !important;
+  }
+
+  textarea {
+    border: 1px solid #787775;
+    background-color: white;
+    color: #1f1f1f;
+    -moz-appearance: none !important;
+  }
+
+  select {
+    border: 1px solid #787775;
+    background-color: white;
+    color: #1f1f1f;
+    -moz-appearance: none !important;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    border: 1px solid #787775 !important;
+    background-color: white !important;
+    color: #1f1f1f !important;
+    -moz-appearance: none !important;
+  }
+
+  *|*::-moz-radio {
+    background-color: white;
+    -moz-appearance: none !important;
+  }
+
+  button,
+  input[type="reset"],
+  input[type="button"],
+  input[type="submit"] {
+    border: 1px solid #787775;
+    background-color: white;
+    color: #1f1f1f;
+    -moz-appearance: none !important;
+  }
+}
