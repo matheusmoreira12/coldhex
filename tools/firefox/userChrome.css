@@ -14,3 +14,9 @@
 .ac-action-text {
   color:#787775 !important;
 }
+
+/* Adjust height of bookmarks toolbar */
+#PersonalToolbar {
+margin-top: -7px !important;
+margin-bottom: -5px !important;
+}
