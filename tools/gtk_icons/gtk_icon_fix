@@ -12,7 +12,7 @@
 RUNPATH=$( dirname "$0" )
 RUNPATH=$( cd "$RUNPATH" && pwd )
 SRC=$RUNPATH/icons
-DROPBOX_DST=$HOME/.dropbox-dist/dropbox-lnx.x86_64-2.10.30/images/hicolor/16x16
+DROPBOX_DST=$HOME/.dropbox-dist/dropbox-lnx.x86_64-2.10.52/images/hicolor/16x16
 FIREFOX_DST=/usr/share/icons/hicolor
 
 # Update icon cache
