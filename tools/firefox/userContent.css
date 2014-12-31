@@ -4,8 +4,8 @@
  * author sets any.  Rules with !important overrule author rules.
  */
 
-/* Styles for body and forms, excluding internal about:* URLs */
-@-moz-document regexp('(?!about:).*') {
+/* Styles for body and forms, excluding internal about:* and awesome WM site */
+@-moz-document regexp('(?!(about:|http://awesome.naquadah.org/)).*') {
   body {
     background-color: white;
     color: #1f1f1f;
